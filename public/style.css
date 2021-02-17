@@ -1,0 +1,141 @@
+body {
+  background-color: #A01C32;
+  margin: 0;
+  font-family: 'PT Sans';
+}
+
+#game {
+  align-items: center;
+  background-color: #EC93A2;
+  border-radius: 5px;
+  border: 5px outset #da304c;
+  box-shadow: 2px 2px black;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-items: space-around;
+  margin: auto;
+  margin-top: 15vh;
+  overflow: auto;
+  padding: 2vh 1vw;
+  width: 40vw
+}
+
+#game::-webkit-scrollbar, .word-box::-webkit-scrollbar {
+  width: .5em;
+  height: .5em;
+}
+
+#game::-webkit-scrollbar-track, .word-box::-webkit-scrollbar-track{
+  background-color: none;
+  
+}
+
+#game::-webkit-scrollbar-thumb, .word-box::-webkit-scrollbar-thumb{
+  background-color: #A01C32;
+  border-radius: 5px;
+  height: .5em;
+  width: .1em
+}
+
+.guesses-box {
+  flex-wrap: wrap;
+}
+
+#header {
+  position: absolute;
+  top: 0px;
+  height: 8vh;
+  background-color: #F9DCE1;
+  border-bottom: 5px inset #da304c;
+  color:#A01C32;
+  padding: 1vh 10vw;
+  width: 80vw
+}
+
+  #category-container {
+    float: left;
+    height: 2em
+  }
+
+    #category {
+      margin-top: 2vh;
+      border-radius: 5px;
+      background-color: #EC93A2;
+      color: #faeaed;
+    }
+
+  #title {
+    float: right;
+    font-family: 'Playfair Display';
+    font-size: 2.5em;
+    margin: 1vh 0;
+    text-shadow: 1px 1px #EC93A2;
+  }
+
+
+
+.image{
+  height: 25vh;
+  flex: 1 1 20%;
+}
+
+.image-container {
+  display: none
+}
+
+.puzzle-letter, .puzzle-space {
+  background-color: #F9DCE1;
+  border-radius: 7.5px;
+  box-shadow: 3px 3px #46A46C;
+  margin: 10px
+}
+
+.puzzle-letter {
+  align-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+  max-height: 4em;
+  max-width: 1em;
+  width: 1em;
+  min-width: .65em;
+}
+
+.puzzle-space {
+  display: block;
+  height: 0;
+  min-width: 100%
+}
+
+.status-text {
+  font-size: 2em;
+  font-weight: 600
+}
+
+.word-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  overflow-x: auto;
+}
+
+.word-container, .guesses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 100%;
+  width: 40vw;
+}
+
+.new-game {
+  background-color: #1d8044;
+  border-radius: 5px;
+  color: #F9DCE1
+}
+
+.new-game:active{
+  background-color: #176335
+}
